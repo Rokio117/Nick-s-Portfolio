@@ -15,9 +15,15 @@ nav {
 footer, nav {
   background-color: black;
 }
-h1 {
+h1, .hamburger-menu {
   padding-top: 60px;
   background-color: #bbb;
+}
+.hamburger-menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: 40px;
 }
 .bio {
   background-color: #ddd;
@@ -52,7 +58,7 @@ ul {
   margin: 5px;
   
 }
-#hamburger-menu {
+#hamburger-button {
   float: right;
   height: 50px;
   width: 50px;
