@@ -1,0 +1,66 @@
+main {
+  box-sizing: border-box;
+  text-align: center;
+}
+body {
+  margin: 0px;
+}
+nav {
+  color: white;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+footer, nav {
+  background-color: black;
+}
+h1 {
+  padding-top: 60px;
+  background-color: #bbb;
+}
+.bio {
+  background-color: #ddd;
+}
+.portfolio {
+  background-color: #bbb
+}
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.tech-used {
+  width: 40px;
+  height: 40px;
+}
+.footer-picture {
+  width: 50px;
+  height: 50px;
+  padding: 4px;
+}
+.screenshot {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hamburger {
+  display: block;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  
+}
+#hamburger-menu {
+  float: right;
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border:none;
+  box-sizing: border-box;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+}
