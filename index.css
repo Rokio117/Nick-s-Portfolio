@@ -70,3 +70,6 @@ footer {
   display: flex;
   justify-content: space-around;
 }
+.large-screen-menu {
+  display: none;
+}
