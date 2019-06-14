@@ -8,7 +8,10 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
-  
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -18,16 +21,16 @@
       <span class="hamburger"></span>
       <span class="hamburger"></span>
     </button>
-    <nav>
-      <a class="about-nav nav-item" href="">About</a>
-      <a class="portfolio-nav nav-item" href="">Portfolio</a>
-      <a class="contact-nav nav-item" href="">Contact</a>
+    <nav id="nav-menu" class="hidden">
+      <a id="about-nav" class="about-nav nav-item" href="#about">About</a>
+      <a id="portfolio-nav" class="portfolio-nav nav-item" href="#portfolio">Portfolio</a>
+      <a id="contact-nav" class="contact-nav nav-item" href="#footer">Contact</a>
     </nav>
   </header>
   <main>
     <h2>Hi. My name is Nick and I am a fullstack web developer.</h2>
     <section class="bio">
-      <h3>About</h3>
+      <h3 id="about">About</h3>
       <span id="bio-banner">Here are a few things about me
         <ul>
           <li>I am an avid gamer,</li>
@@ -40,10 +43,10 @@
       </span>
     </section>
     <section class="portfolio">
-      <h4>Portfolio</h4>
+      <h4 id="portfolio">Portfolio</h4>
       <span class="screenshot-title">Music Quiz</span>
       <img id="quiz-app-screenshot" class="screenshot" src="Images/Music-Quiz-ScreenShot.png" alt="A screenshot of Nick's music quiz.">
-      <span id="links"><a href="">Live</a>|<a href="">Repo</a></span>
+      <span id="links"><a href="https://rokio117.github.io/Quiz-App-Final/">Live</a>|<a href="https://repl.it/@Rokio/Quiz-App-Final">Repo</a></span>
       <p class="description">I designed a quiz app to test users on their musical knowledge. It covers subjects from music theory to composers to instrumentation.</p>
       <span>Tech Used:
         <img class="tech-used" src="Images/html logo.png" alt="html logo">
@@ -53,10 +56,11 @@
       </span>
     </section>
   </main>
-  <footer>
-    <img class="footer-picture" src="Images/Gmail-logo-compressed.png" alt="Gmail logo">
-    <img class="footer-picture" src="Images/Github-logo-compressed.png" alt="Github logo">
-    <img class="footer-picture" src="Images/Linkedin-logo.png" alt="Linkedin logo">
+  <footer id="footer">
+    <a href="mailto:hillan02@gmail.com"><img class="footer-picture" src="Images/Gmail-logo-compressed.png" alt="Gmail logo"></a>
+    <a href="https://github.com/Rokio117"><img class="footer-picture" src="Images/Github-logo-compressed.png" alt="Github logo"></a>
+    <a href="https://www.linkedin.com/in/nicholas-hillary-7a0b9b158/"><img class="footer-picture" src="Images/Linkedin-logo.png" alt="Linkedin logo"></a> 
   </footer>
+  <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
