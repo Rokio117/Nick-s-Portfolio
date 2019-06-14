@@ -1,12 +1,39 @@
-main {
+* {
   box-sizing: border-box;
-  text-align: center;
-}
-body {
   margin: 0px;
+  padding: 0px;
+  font-family: 'Inconsolata', monospace;
+}
+main {
+  text-align: center;
+  margin-top: 160px;
+}
+main > section {
+  margin-top: 80px;
+}
+h1 {
+  position: relative;
+  height: 40px;
+}
+h2, .description {
+  padding: 10px;
+}
+h3, h4 {
+  margin-bottom: 20px;
 }
 nav {
+  display: flex;
+  justify-content: flex-end;
+  height: 40px;
+}
+.nav-item {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 20px;
+}
+header {
   color: white;
+  background-color: black;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -15,61 +42,100 @@ nav {
 footer, nav {
   background-color: black;
 }
-h1, .hamburger-menu {
-  padding-top: 60px;
-  background-color: #bbb;
-}
 .hamburger-menu {
   display: flex;
   justify-content: space-between;
   background-color: black;
   height: 40px;
 }
-.bio {
-  background-color: #ddd;
-}
 .portfolio {
-  background-color: #bbb
+  margin-bottom: 80px;
 }
 ul {
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+}
+li {
+  margin-top: 12px;
+  line-height: 25px;
 }
 .tech-used {
   width: 40px;
   height: 40px;
 }
+#links {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .footer-picture {
   width: 50px;
   height: 50px;
-  padding: 4px;
+  
 }
 .screenshot {
   width: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .hamburger {
   display: block;
   height: 3px;
   background-color: white;
-  margin: 5px;
-  
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 #hamburger-button {
-  float: right;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   background-color: black;
   border:none;
-  box-sizing: border-box;
+  position: absolute;
+  right: 10px;
+  top:0;
+}
+p {
+  line-height: 20px;
 }
 footer {
   display: flex;
   justify-content: space-around;
+  margin-top: 80px;
 }
 .large-screen-menu {
   display: none;
+}
+
+/*media queries*/
+
+
+/*color assignments*/
+.about-nav, h3 {
+  color: teal;
+}
+.portfolio-nav, h4 {
+  color: rgb(237, 66, 36)
+}
+.contact-nav {
+  color: chartreuse;
+}
+
+/* Font Sizes */
+#bio-banner, .screenshot-title {
+  font-size: 25px;
+}
+li {
+  font-size: 20px;
+}
+.description {
+  font-size: 16px;
+}
+h3, h4 {
+  font-size: 35px;
+  font-weight: bold;
+}
+h1, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
 }

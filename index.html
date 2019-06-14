@@ -5,58 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Nick Hillary's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
+  
 </head>
 <body>
-  <nav role="navigation">Nick Hillary
+  <header>
+    <h1>Nick Hillary</h1>
     <button type="button" id="hamburger-button">
       <span class="hamburger"></span>
       <span class="hamburger"></span>
       <span class="hamburger"></span>
     </button>
-    <div class="large-screen-menu">
-      <a id="about" href="">About</a>
-      <a id="Portfolio" href="">Portfolio</a>
-      <a id="Contact" href="">Contact</a>
-    </div>
-  </nav>
-  <div class="hamburger-menu">
-      <a id="about" href="">About</a>
-      <a id="Portfolio" href="">Portfolio</a>
-      <a id="Contact" href="">Contact</a>
-    </div>
-    <main>
-      <h1>Hi. My name is Nick and I am a fullstack web developer.</h1>
-      <section class="bio">
-        <h2>Bio</h2>
-        <span>Here are a few things about me
-          <ul>
-            <li>I am an avid gamer,</li>
-            <li>musician,</li>
-            <li>Rubik's cuber,</li>
-            <li>reader,</li>
-            <li>and fullstack web developer.</li>
-            <li>I love using html, CSS, JavaScript, and jQuery.</li>
-          </ul>
-        </span>
-      </section>
-      <section class="portfolio">
-        <h3>Portfolio</h3>
-        <span class="screenshot-title">Music Quiz</span>
-        <img id="quiz-app-screenshot" class="screenshot" src="Music-Quiz-ScreenShot.png" alt="A screenshot of Nick's music quiz.">
-        <p>I designed a quiz app to test users on their musical knowledge. It covers subjects from music theory to composers to instrumentation.</p>
-        <span>Tech Used:
-          <img class="tech-used" src="html logo.png" alt="html logo">
-          <img class="tech-used" src="Css-Logo.png" alt="CSS logo">
-          <img class="tech-used" src="JavaScript Logo.png" alt="JavaScript logo">
-          <img class="tech-used" src="jQuery Logo.png" alt="jQuery logo">
-        </span>
-      </section>
-    </main>
-    <footer>
-      <img class="footer-picture" src="Gmail-logo-compressed.png" alt="Gmail logo">
-      <img class="footer-picture" src="Github-logo-compressed.png" alt="Github logo">
-      <img class="footer-picture" src="Linkedin-logo.png" alt="Linkedin logo">
-    </footer>
+    <nav>
+      <a class="about-nav nav-item" href="">About</a>
+      <a class="portfolio-nav nav-item" href="">Portfolio</a>
+      <a class="contact-nav nav-item" href="">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Hi. My name is Nick and I am a fullstack web developer.</h2>
+    <section class="bio">
+      <h3>About</h3>
+      <span id="bio-banner">Here are a few things about me
+        <ul>
+          <li>I am an avid gamer,</li>
+          <li>musician,</li>
+          <li>Rubik's cuber,</li>
+          <li>reader,</li>
+          <li>and fullstack web developer.</li>
+          <li>I love using html, CSS, JavaScript, and jQuery.</li>
+        </ul>
+      </span>
+    </section>
+    <section class="portfolio">
+      <h4>Portfolio</h4>
+      <span class="screenshot-title">Music Quiz</span>
+      <img id="quiz-app-screenshot" class="screenshot" src="images/Music-Quiz-ScreenShot.png" alt="A screenshot of Nick's music quiz.">
+      <span id="links"><a href="">Live</a>|<a href="">Repo</a></span>
+      <p class="description">I designed a quiz app to test users on their musical knowledge. It covers subjects from music theory to composers to instrumentation.</p>
+      <span>Tech Used:
+        <img class="tech-used" src="images/html logo.png" alt="html logo">
+        <img class="tech-used" src="images/Css-Logo.png" alt="CSS logo">
+        <img class="tech-used" src="images/JavaScript Logo.png" alt="JavaScript logo">
+        <img class="tech-used" src="images/jQuery Logo.png" alt="jQuery logo">
+      </span>
+    </section>
+  </main>
+  <footer>
+    <img class="footer-picture" src="images/Gmail-logo-compressed.png" alt="Gmail logo">
+    <img class="footer-picture" src="images/Github-logo-compressed.png" alt="Github logo">
+    <img class="footer-picture" src="images/Linkedin-logo.png" alt="Linkedin logo">
+  </footer>
 </body>
 </html>
