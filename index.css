@@ -107,6 +107,9 @@ footer {
 .large-screen-menu {
   display: none;
 }
+a {
+  text-decoration: none;
+}
 
 /*media queries*/
 
