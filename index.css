@@ -14,7 +14,6 @@ main > section {
 h1 {
   position: relative;
   height: 40px;
-  border-bottom: 2px solid gray;
   padding-left: 5px;
 }
 h2, .description {
@@ -45,8 +44,9 @@ header {
   top: 0px;
   left: 0px;
   right: 0px;
+  padding: 5px;
 }
-footer, nav {
+address, nav {
   background-color: black;
 }
 .hamburger-menu {
@@ -75,9 +75,7 @@ li {
   margin-right: auto;
 }
 .footer-picture {
-  width: 50px;
   height: 50px;
-  
 }
 .screenshot {
   width: 80%;
@@ -101,10 +99,10 @@ li {
   border:none;
   position: absolute;
   right: 10px;
-  top:0;
+  top:5px;
 }
 
-footer {
+address {
   display: flex;
   justify-content: space-around;
   margin-top: 80px;
