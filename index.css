@@ -2,24 +2,26 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
 }
 main {
   text-align: center;
   margin-top: 160px;
 }
 main > section {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 h1 {
   position: relative;
   height: 40px;
   padding-left: 5px;
 }
-h2, .description {
+h2,
+.description {
   padding: 10px;
 }
-h3, h4 {
+h3,
+h4 {
   margin-bottom: 20px;
   padding-top: 80px;
   font-weight: bold;
@@ -46,7 +48,8 @@ header {
   right: 0px;
   padding: 5px;
 }
-address, nav {
+address,
+nav {
   background-color: black;
 }
 .hamburger-menu {
@@ -102,11 +105,11 @@ li {
 #hamburger-button {
   height: 40px;
   width: 40px;
-  background-color: rgba(0, 0,0, 0.0);
-  border:none;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
   position: absolute;
   right: 10px;
-  top:5px;
+  top: 5px;
 }
 
 address {
@@ -117,7 +120,7 @@ address {
 }
 .github-logo {
   border-radius: 5px;
-  background-color: rgb(200, 200, 200)
+  background-color: rgb(200, 200, 200);
 }
 .large-screen-menu {
   display: none;
@@ -125,24 +128,75 @@ address {
 a {
   text-decoration: none;
 }
-button, a:hover {
+button:hover,
+a:hover {
   cursor: pointer;
-} 
-h1, h3, h4 {
-  font-family: 'Montserrat', sans-serif;
+}
+button:hover,
+a:hover {
+  transform: scale(1.1);
+}
+h1,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+.phone-screenshot {
+  width: 40%;
+  border: 1px solid black;
+}
+#phoneContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#portfolio {
+  padding-top: 0;
+  margin-top: 0;
+}
+.node-logo {
+  width: inherit;
+}
+#triviaTrackerNavMenu,
+#bookmarkUpcoming {
+  display: none;
+}
+#phoneNumber,
+#textEmail {
+  font-weight: bold;
+  color: rgb(237, 66, 36);
+  display: block;
+}
+#contactHeader {
+  padding-top: none !important;
+  color: springgreen;
 }
 /*media queries*/
 @media screen and (min-width: 768px) {
-  #bio-banner, .screenshot-title {
+  #contactSection {
+    font-size: 25px;
+  }
+  .phone-screenshot {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 30%;
+  }
+  #bio-banner,
+  .screenshot-title {
     font-size: 30px;
   }
   li {
     font-size: 25px;
   }
-  .description, #tech-used, .links {
+  .description,
+  #tech-used,
+  .links {
     font-size: 25px;
   }
-  h3, h4 {
+  h3,
+  h4 {
     font-size: 40px;
   }
   h2 {
@@ -154,13 +208,26 @@ h1, h3, h4 {
   #nav-menu {
     font-size: 25px;
   }
+  .screenshot-title {
+    margin-top: 60px;
+  }
 }
 @media screen and (min-width: 1100px) {
+  #triviaTrackerNavMenu,
+  #bookmarkUpcoming {
+    display: block;
+  }
+  .phone-screenshot {
+    width: 20%;
+  }
+  #phoneContainer {
+    justify-content: space-evenly;
+  }
   #hamburger-button {
     display: none;
   }
   nav {
-    display: flex !important; 
+    display: flex !important;
     justify-content: flex-end;
     height: 40px;
     font-size: 25px;
@@ -177,31 +244,46 @@ h1, h3, h4 {
   .screenshot {
     width: 50%;
   }
+  .screenshot-title {
+    margin-top: 150px;
+    font-size: 40px;
+  }
+  #about,
+  #portfolio,
+  #contactHeader {
+    font-size: 60px;
+  }
 }
 
 /*color assignments*/
-.about-nav, h3 {
+.about-nav,
+h3 {
   color: teal;
 }
-.portfolio-nav, h4 {
-  color: rgb(237, 66, 36)
+.portfolio-nav,
+h4 {
+  color: rgb(237, 66, 36);
 }
 .contact-nav {
   color: chartreuse;
 }
 
 /* Font Sizes */
-@media screen and (max-width:767px){
-  #bio-banner, .screenshot-title {
+@media screen and (max-width: 767px) {
+  #bio-banner,
+  .screenshot-title {
     font-size: 25px;
   }
   li {
     font-size: 20px;
   }
-  .description, #tech-used, .links {
+  .description,
+  #tech-used,
+  .links {
     font-size: 16px;
   }
-  h3, h4 {
+  h3,
+  h4 {
     font-size: 35px;
   }
   p {
