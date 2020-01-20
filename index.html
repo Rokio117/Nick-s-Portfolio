@@ -1,78 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Nick Hillary's Portfolio</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
-</head>
-<body>
-  <header>
-    <h1>Nick Hillary</h1>
-    <button type="button" id="hamburger-button">
-      <span class="hamburger"></span>
-      <span class="hamburger"></span>
-      <span class="hamburger"></span>
-    </button>
-    <nav id="nav-menu" class="hidden">
-      <a id="about-nav" class="about-nav nav-item" href="#about">About</a>
-      <a id="portfolio-nav" class="portfolio-nav nav-item" href="#portfolio">Portfolio</a>
-      <a id="contact-nav" class="contact-nav nav-item" href="#footer">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <h2>Hi. My name is Nick and I am a front-end web developer.</h2>
-    <section class="bio">
-      <h3 id="about">About</h3>
-      <span id="bio-banner">Here are a few things about me
-        <ul>
-          <li>I am an avid gamer,</li>
-          <li>musician,</li>
-          <li>Rubik's cuber,</li>
-          <li>reader,</li>
-          <li>and full stack developer.</li>
-          <li>I love using html, CSS, JavaScript, jQuery, React, Node, and Express.</li>
-          <li>My favorite parts of front end development is creating the perfect user experience.</li>
-          <li>My favorite part of server side programmins is creating my own middleware to make my API airtight</li>
-          <li>I enjoy being on a team and having others to collaborate with.</li>
-        </ul>
-      </span>
-    </section>
-    <section class="portfolio">
-      <h4 id="portfolio">Portfolio</h4>
-      <span class="screenshot-title">Music Quiz</span>
-      <img id="quiz-app-screenshot" class="screenshot" src="Images/Music-Quiz-ScreenShot.png" alt="A screenshot of Nick's music quiz.">
-      <span class="links"><a href="https://rokio117.github.io/Quiz-App-Final/" target="blank">Live</a>|<a href="https://repl.it/@Rokio/Quiz-App-Final" target="blank">Repo</a></span>
-      <p class="description">I designed a quiz app to test users on their musical knowledge. It covers subjects from music theory to composers to instrumentation.</p>
-      <span id="tech-used">Tech Used:
-        <img class="tech-used" src="Images/html logo.png" alt="html logo">
-        <img class="tech-used" src="Images/Css-Logo.png" alt="CSS logo">
-        <img class="tech-used" src="Images/JavaScript Logo.png" alt="JavaScript logo">
-        <img class="tech-used" src="Images/jQuery Logo.png" alt="jQuery logo">
-      </span>
-      <span class="screenshot-title">When Was That?</span>
-      <img id="When-Was-That-Screenshot" class="screenshot" src="Images/When-was-that-3.png" alt="A screenshot of When Was That?">
-      <span class="links"><a href="https://rokio117.github.io/When-Was-That-/" target="blank">Live</a>|<a href="https://repl.it/@Rokio/When-Was-That" target="blank">Repo</a></span>
-      <p class="description">This app uses the lastfm API and The Movie Database API to allow users to look up the year their favorite song or movie premiered.</p>
-      <span id="tech-used">Tech Used:
-        <img class="tech-used" src="Images/html logo.png" alt="html logo">
-        <img class="tech-used" src="Images/Css-Logo.png" alt="CSS logo">
-        <img class="tech-used" src="Images/JavaScript Logo.png" alt="JavaScript logo">
-        <img class="tech-used" src="Images/jQuery Logo.png" alt="jQuery logo">
-    </section>
-  </main>
-  <address id="footer">
-    <a href="mailto:hillan02@gmail.com" target="blank"><img class="footer-picture" src="Images/Gmail-logo-compressed.png" alt="Gmail logo"></a>
-    <a href="https://github.com/Rokio117" class="github-logo" target="blank"><img class="footer-picture github-logo" src="Images/Github-logo-compressed.png" alt="Github logo"></a>
-    <a href="https://www.linkedin.com/in/nicholas-hillary-7a0b9b158/" target="blank"><img class="footer-picture" src="Images/Linkedin-logo.png" alt="Linkedin logo"></a> 
-  </address>
-  <script type="text/javascript" src="index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nick Hillary's Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Nick Hillary</h1>
+      <button type="button" id="hamburger-button">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      <nav id="nav-menu" class="hidden">
+        <a id="about-nav" class="about-nav nav-item" href="#about">About</a>
+        <a id="portfolio-nav" class="portfolio-nav nav-item" href="#portfolio"
+          >Portfolio</a
+        >
+        <a id="contact-nav" class="contact-nav nav-item" href="#footer"
+          >Contact</a
+        >
+      </nav>
+    </header>
+    <main>
+      <h2>Hi. My name is Nick and I am a front-end web developer.</h2>
+      <section class="bio">
+        <h3 id="about">About</h3>
+        <span id="bio-banner"
+          >Here are a few things about me
+          <ul>
+            <li>I am an avid gamer,</li>
+            <li>musician,</li>
+            <li>Rubik's cuber,</li>
+            <li>reader,</li>
+            <li>and full stack developer.</li>
+            <li>
+              I love using html, CSS, JavaScript, jQuery, React, Node, and
+              Express.
+            </li>
+            <li>
+              My favorite parts of front end development is creating the perfect
+              user experience.
+            </li>
+            <li>
+              My favorite part of server side programmins is creating my own
+              middleware to make my API airtight
+            </li>
+            <li>
+              I enjoy being on a team and having others to collaborate with.
+            </li>
+          </ul>
+        </span>
+      </section>
+      <section class="portfolio">
+        <h4 id="portfolio">Portfolio</h4>
+        <span class="screenshot-title">Music Quiz</span>
+        <img
+          id="quiz-app-screenshot"
+          class="screenshot"
+          src="Images/Music-Quiz-ScreenShot.png"
+          alt="A screenshot of Nick's music quiz."
+        />
+        <span class="links"
+          ><a href="https://rokio117.github.io/Quiz-App-Final/" target="blank"
+            >Live</a
+          >|<a href="https://repl.it/@Rokio/Quiz-App-Final" target="blank"
+            >Repo</a
+          ></span
+        >
+        <p class="description">
+          I designed a quiz app to test users on their musical knowledge. It
+          covers subjects from music theory to composers to instrumentation.
+        </p>
+        <span id="tech-used"
+          >Tech Used:
+          <img class="tech-used" src="Images/html logo.png" alt="html logo" />
+          <img class="tech-used" src="Images/Css-Logo.png" alt="CSS logo" />
+          <img
+            class="tech-used"
+            src="Images/JavaScript Logo.png"
+            alt="JavaScript logo"
+          />
+          <img
+            class="tech-used"
+            src="Images/jQuery Logo.png"
+            alt="jQuery logo"
+          />
+        </span>
+
+        <span class="screenshot-title">When Was That?</span>
+        <img
+          id="When-Was-That-Screenshot"
+          class="screenshot"
+          src="Images/When-was-that-3.png"
+          alt="A screenshot of When Was That?"
+        />
+        <span class="links"
+          ><a href="https://rokio117.github.io/When-Was-That-/" target="blank"
+            >Live</a
+          >|<a href="https://repl.it/@Rokio/When-Was-That" target="blank"
+            >Repo</a
+          ></span
+        >
+        <p class="description">
+          This app uses the lastfm API and The Movie Database API to allow users
+          to look up the year their favorite song or movie premiered.
+        </p>
+        <span id="tech-used"
+          >Tech Used:
+          <img class="tech-used" src="Images/html logo.png" alt="html logo" />
+          <img class="tech-used" src="Images/Css-Logo.png" alt="CSS logo" />
+          <img
+            class="tech-used"
+            src="Images/JavaScript Logo.png"
+            alt="JavaScript logo"
+          />
+          <img
+            class="tech-used"
+            src="Images/jQuery Logo.png"
+            alt="jQuery logo"
+          />
+        </span>
+        <h4>Capstones</h4>
+        <span class="screenshot-title">Trivia Tracker</span>
+        <img
+          id="triviaTrackerWelcome"
+          class="screenshot phone-screenshot"
+          src="Images/phoneWelcomePage.jpg"
+          alt="Welcome page for Trivia Tracker"
+        />
+        <img
+          id="triviaTrackerCreateEvent"
+          class="screenshot phone-screenshot"
+          src="Images/phoneCreateEvent.jpg"
+          alt="Create event page for Trivia Tracker"
+        />
+        <span class="links"
+          ><a href="https://trivia-tracker-app-alpha-six.now.sh/" target="blank"
+            >Live</a
+          >|<a href="https://github.com/Rokio117/trivia-tracker" target="blank"
+            >Repo</a
+          ></span
+        >
+        <p class="description">
+          Trivia Tracker is a way for users to track the progress of their pub
+          trivia team(s). Using Trivia Tracker a user can make their own team,
+          add their friends, and record events and winnings.
+        </p>
+        <span id="tech-used"
+          >Tech Used:
+
+          <img
+            class="tech-used"
+            src="Images/React-logo.png"
+            alt="ReactJS Logo"
+          />
+          <img
+            class="tech-used"
+            src="Images/JavaScript Logo.png"
+            alt="JavaScript logo"
+          />
+          <img class="tech-used" src="Images/Css-Logo.png" alt="CSS logo" />
+          <img
+            class="tech-used node-logo"
+            src="Images/nodeLogo.png"
+            alt="nodeJS logo"
+          />
+        </span>
+      </section>
+    </main>
+    <address id="footer">
+      <a href="mailto:hillan02@gmail.com" target="blank"
+        ><img
+          class="footer-picture"
+          src="Images/Gmail-logo-compressed.png"
+          alt="Gmail logo"
+      /></a>
+      <a href="https://github.com/Rokio117" class="github-logo" target="blank"
+        ><img
+          class="footer-picture github-logo"
+          src="Images/Github-logo-compressed.png"
+          alt="Github logo"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/nicholas-hillary-7a0b9b158/"
+        target="blank"
+        ><img
+          class="footer-picture"
+          src="Images/Linkedin-logo.png"
+          alt="Linkedin logo"
+      /></a>
+    </address>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
 </html>
