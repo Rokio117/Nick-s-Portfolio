@@ -65,7 +65,7 @@ ul {
   list-style-type: none;
 }
 li {
-  margin-top: 12px;
+  margin-top: 18px;
   line-height: 25px;
 }
 .tech-used {
@@ -78,7 +78,7 @@ li {
   margin-right: auto;
 }
 .footer-picture {
-  height: 50px;
+  height: 35px;
 }
 .screenshot {
   width: 80%;
@@ -92,7 +92,7 @@ li {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 80px;
   font-weight: bold;
 }
 .hamburger {
@@ -144,6 +144,7 @@ h4 {
 .phone-screenshot {
   width: 40%;
   border: 1px solid black;
+  margin-bottom: 10px;
 }
 #phoneContainer {
   width: 100%;
@@ -173,8 +174,24 @@ h4 {
   padding-top: none !important;
   color: springgreen;
 }
+.description {
+  text-align: left !important;
+}
+#largeAboutDisplay {
+  display: none;
+}
+#smallAboutDisplay {
+  margin-top: 20px;
+}
+
+/* #firstHeader {
+  margin-top: 20px;
+} */
 /*media queries*/
 @media screen and (min-width: 768px) {
+  #about {
+    margin-bottom: 80px;
+  }
   #contactSection {
     font-size: 25px;
   }
@@ -209,10 +226,20 @@ h4 {
     font-size: 25px;
   }
   .screenshot-title {
-    margin-top: 60px;
+    margin-top: 80px;
+  }
+  .footer-picture {
+    height: 50px;
   }
 }
 @media screen and (min-width: 1100px) {
+  #largeAboutDisplay {
+    display: inline;
+  }
+
+  #smallAboutDisplay {
+    display: none;
+  }
   #triviaTrackerNavMenu,
   #bookmarkUpcoming {
     display: block;
@@ -258,14 +285,14 @@ h4 {
 /*color assignments*/
 .about-nav,
 h3 {
-  color: teal;
+  color: deepskyblue;
 }
 .portfolio-nav,
 h4 {
   color: rgb(237, 66, 36);
 }
 .contact-nav {
-  color: chartreuse;
+  color: springgreen;
 }
 
 /* Font Sizes */
