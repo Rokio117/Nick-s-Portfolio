@@ -172,16 +172,33 @@ h4 {
 }
 #contactHeader {
   padding-top: none !important;
-  color: springgreen;
+  color: mediumseagreen;
 }
 .description {
   text-align: left !important;
 }
-#largeAboutDisplay {
-  display: none;
-}
+
 #smallAboutDisplay {
   margin-top: 20px;
+}
+#bio-banner,
+.screenshot-title {
+  font-size: 25px;
+}
+li {
+  font-size: 20px;
+}
+.description,
+#tech-used,
+.links {
+  font-size: 16px;
+}
+h3,
+h4 {
+  font-size: 35px;
+}
+p {
+  line-height: 20px;
 }
 
 /*media queries*/
@@ -234,9 +251,6 @@ h4 {
     display: inline;
   }
 
-  #smallAboutDisplay {
-    display: none;
-  }
   #triviaTrackerNavMenu,
   #bookmarkUpcoming {
     display: block;
@@ -291,9 +305,12 @@ h4 {
 .contact-nav {
   color: springgreen;
 }
+#about {
+  color: rgb(0, 64, 255);
+}
 
 /* Font Sizes */
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
   #bio-banner,
   .screenshot-title {
     font-size: 25px;
@@ -313,4 +330,4 @@ h4 {
   p {
     line-height: 20px;
   }
-}
+} */
