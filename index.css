@@ -146,7 +146,7 @@ h4 {
   border: 1px solid black;
   margin-bottom: 10px;
 }
-#phoneContainer {
+.phoneContainer {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -258,7 +258,7 @@ p {
   .phone-screenshot {
     width: 20%;
   }
-  #phoneContainer {
+  .phoneContainer {
     justify-content: space-evenly;
   }
   #hamburger-button {
