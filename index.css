@@ -189,7 +189,7 @@ li {
   font-size: 20px;
 }
 .description,
-#tech-used,
+.tech-used-container,
 .links {
   font-size: 16px;
 }
@@ -222,7 +222,7 @@ p {
     font-size: 25px;
   }
   .description,
-  #tech-used,
+  .tech-used-container,
   .links {
     font-size: 25px;
   }
