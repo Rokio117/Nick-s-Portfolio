@@ -72,10 +72,11 @@ li {
   width: 40px;
   height: 40px;
 }
+
 .links {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 .footer-picture {
   height: 35px;
@@ -152,6 +153,7 @@ h4 {
   justify-content: space-evenly;
   padding-top: 10px;
   padding-bottom: 10px;
+  align-items: flex-start;
 }
 #portfolio {
   padding-top: 0;
@@ -178,8 +180,15 @@ h4 {
   text-align: left !important;
 }
 
+p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 #smallAboutDisplay {
   margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 #bio-banner,
 .screenshot-title {
@@ -189,8 +198,7 @@ li {
   font-size: 20px;
 }
 .description,
-.tech-used-container,
-.links {
+.tech-used-container {
   font-size: 16px;
 }
 h3,
@@ -199,6 +207,21 @@ h4 {
 }
 p {
   line-height: 20px;
+}
+.repoLink {
+  margin-left: 8px;
+  margin-right: 8px;
+
+  font-size: 22px;
+}
+.links {
+  font-size: 22px;
+}
+#textEmail,
+#phoneNumber {
+  font-size: 22px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 /*media queries*/
