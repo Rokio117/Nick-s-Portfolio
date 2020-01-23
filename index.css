@@ -163,7 +163,9 @@ h4 {
   width: inherit;
 }
 #triviaTrackerNavMenu,
-#bookmarkUpcoming {
+#bookmarkUpcoming,
+#wwtSong,
+#quizFinal {
   display: none;
 }
 #phoneNumber,
@@ -275,7 +277,9 @@ p {
   }
 
   #triviaTrackerNavMenu,
-  #bookmarkUpcoming {
+  #bookmarkUpcoming,
+  #quizFinal,
+  #wwtSong {
     display: block;
   }
   .phone-screenshot {
