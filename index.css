@@ -196,6 +196,9 @@ p {
 .screenshot-title {
   font-size: 25px;
 }
+#bio-banner {
+  text-align: center;
+}
 li {
   font-size: 20px;
 }
@@ -318,6 +321,12 @@ p {
   #contactHeader {
     font-size: 60px;
   }
+  #portfolio {
+    margin-top: 150px;
+  }
+  #footer {
+    margin-top: 150px;
+  }
 }
 
 /*color assignments*/
@@ -335,26 +344,3 @@ h4 {
 #about {
   color: rgb(0, 64, 255);
 }
-
-/* Font Sizes */
-/* @media screen and (max-width: 767px) {
-  #bio-banner,
-  .screenshot-title {
-    font-size: 25px;
-  }
-  li {
-    font-size: 20px;
-  }
-  .description,
-  #tech-used,
-  .links {
-    font-size: 16px;
-  }
-  h3,
-  h4 {
-    font-size: 35px;
-  }
-  p {
-    line-height: 20px;
-  }
-} */
